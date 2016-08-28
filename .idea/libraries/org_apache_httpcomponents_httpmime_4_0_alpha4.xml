@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="org.apache.httpcomponents:httpmime:4.0-alpha4" type="repository">
+    <properties maven-id="org.apache.httpcomponents:httpmime:4.0-alpha4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/httpmime-4.0-alpha4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.0-beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache-mime4j-0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

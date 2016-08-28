@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.register.Step5">
+    <children>
+        <VBox prefHeight="600.0" prefWidth="900.0" spacing="10.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox spacing="10.0">
+                    <children>
+                        <Label styleClass="heading" text="Anuario Escolar">
+                            <font>
+                                <Font size="60.0"/>
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                            <children>
+                                <ImageView cache="true" fitHeight="74.0" fitWidth="101.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@/resources/img/busto-ipn.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <VBox spacing="10.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER_RIGHT">
+                            <children>
+                                <Label styleClass="small-heading" text="Registro completado">
+                                    <font>
+                                        <Font name="System Bold" size="20.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                        </HBox>
+                        <HBox>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <children>
+                                <Label text="¡Felicidades! Te registraste correctamente en el anuario escolar. Estos son los detalles de tu cuenta. Si notas algun error, inicia sesión para modificar tus datos. Tambien puedes ver las demás personas registradas en tu grupo y generación."
+                                       wrapText="true"/>
+                            </children>
+                        </HBox>
+                        <HBox spacing="10.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <GridPane HBox.hgrow="ALWAYS">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="420.0" minWidth="10.0"
+                                                           prefWidth="180.0"/>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="736.0" minWidth="10.0"
+                                                           prefWidth="339.0"/>
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                        <RowConstraints vgrow="ALWAYS"/>
+                                    </rowConstraints>
+                                    <children>
+                                        <Label text="Número de Boleta"/>
+                                        <Label text="Nombre" GridPane.rowIndex="1"/>
+                                        <Label text="Apellidos" GridPane.rowIndex="2"/>
+                                        <Label text="Plantel" GridPane.rowIndex="3"/>
+                                        <Label text="Grupo" GridPane.rowIndex="4"/>
+                                        <Label text="Generación" GridPane.rowIndex="6"/>
+                                        <Label text="Comentario personal" GridPane.rowIndex="7"/>
+                                        <Label fx:id="lblId" text="Label" GridPane.columnIndex="1"/>
+                                        <Label fx:id="lblName" text="Label" GridPane.columnIndex="1"
+                                               GridPane.rowIndex="1"/>
+                                        <Label fx:id="lblLastName" text="Label" GridPane.columnIndex="1"
+                                               GridPane.rowIndex="2"/>
+                                        <Label fx:id="lblUnit" text="Label" GridPane.columnIndex="1"
+                                               GridPane.rowIndex="3"/>
+                                        <Label fx:id="lblGroup" text="Label" GridPane.columnIndex="1"
+                                               GridPane.rowIndex="4"/>
+                                        <Label fx:id="lblGen" text="Label" GridPane.columnIndex="1"
+                                               GridPane.rowIndex="6"/>
+                                        <Label fx:id="lblComment" text="Label" wrapText="true" GridPane.columnIndex="1"
+                                               GridPane.rowIndex="7"/>
+                                        <Label text="Area o carrera" GridPane.rowIndex="5"/>
+                                        <Label fx:id="lblArea" text="Label" GridPane.columnIndex="1"
+                                               GridPane.rowIndex="5"/>
+                                    </children>
+                                </GridPane>
+                                <ImageView fx:id="imgUserProfile" fitHeight="207.0" fitWidth="258.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/img/user.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                        </HBox>
+                        <HBox alignment="BOTTOM_RIGHT" spacing="10.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#btnExitAction" text="Salir"/>
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="org.apache.james:apache-mime4j:0.3" type="repository">
+    <properties maven-id="org.apache.james:apache-mime4j:0.3" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/apache-mime4j-0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/apache-mime4j-0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/apache-mime4j-0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
